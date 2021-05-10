@@ -1,0 +1,16 @@
+.dishes {
+    text-align: center;
+    border: 3px solid blue;
+
+    .dish {
+        display: inline-block;
+        width: 500px;
+        margin: 50px;
+        border: 3px solid blue;
+
+        .dish_display {
+            height: 300px;
+            border: 3px solid blue;
+        }
+    }
+}

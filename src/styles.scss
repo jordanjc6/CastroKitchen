@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url("http://unblast.com/wp-content/uploads/2020/05/Light-Wood-Background-Texture-5.jpg"); 
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100vw;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+        background-image: url("http://www.ecolabelindex.com/files/ecolabel-logos-sized/food-alliance-certified.png");
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+    }
+
+    .links {
+        margin: 20px;
+    }
+}
