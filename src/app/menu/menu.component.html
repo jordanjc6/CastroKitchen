@@ -1,3 +1,8 @@
+<form>
+    <label for="search_cuisine">Search Cuisine</label>
+    <input type="text" name="search_cuisine" placeholder="Mexican, Filipino etc..." />
+</form>
+
 <div class="dishes">
     <div *ngFor="let dish of dishes" class="dish">
         <div class="dish_display" style="background-image: url(' {{ dish.image }} ');">
