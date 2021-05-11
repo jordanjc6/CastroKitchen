@@ -1,16 +1,31 @@
 .dishes {
     text-align: center;
-    border: 3px solid blue;
 
     .dish {
         display: inline-block;
         width: 500px;
         margin: 50px;
-        border: 3px solid blue;
+        background-color: white;
+        padding: 8px;
 
         .dish_display {
             height: 300px;
-            border: 3px solid blue;
+            position: relative;
+
+            .dish_price {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                color: white;
+                background-color: red;
+                margin: 0;
+                padding: 10px;
+            }
         }
+
+        .dish_description {
+            text-align: left;
+            font-size: 18px;
+        } 
     }
 }

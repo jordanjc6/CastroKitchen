@@ -1,9 +1,9 @@
 <div class="dishes">
     <div *ngFor="let dish of dishes" class="dish">
         <div class="dish_display" style="background-image: url(' {{ dish.image }} ');">
-            <h3 class="dish_price"> {{ dish.price }} </h3>
+            <h3 class="dish_price"> {{ dish.price | currency }} </h3>
         </div> 
-        <div class="dish_name"> {{ dish.name }} </div>
+        <h1 class="dish_name"> {{ dish.name }} </h1>
         <div class="dish_description"> {{ dish.description }} </div>
     </div>
 </div>

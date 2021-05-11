@@ -20,7 +20,7 @@ header {
     justify-content: space-between;
 
     .logo {
-        background-image: url("http://www.ecolabelindex.com/files/ecolabel-logos-sized/food-alliance-certified.png");
+        background-image: url("https://tmp-us-east-1.transloadit.net/17802a4ffe3044e9ade9e3fb486b8273.svg");
         width: 100px;
         height: 100px;
         margin: 10px;
@@ -28,5 +28,17 @@ header {
 
     .links {
         margin: 20px;
+        width: 50%;
+
+        button {
+            background-color: white;
+            border: 2px solid black;
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 20px;
+            width: 200px;
+            margin: 0 5px;
+            float: right;
+        }
     }
 }
