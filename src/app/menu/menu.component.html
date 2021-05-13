@@ -1,6 +1,7 @@
 <form>
     <label for="search_cuisine">Search Cuisine</label>
-    <input type="text" name="search_cuisine" placeholder="Mexican, Filipino etc..." />
+    <input type="text" name="search_cuisine" placeholder="Mexican, Filipino etc..." 
+     [(ngModel)]="input_cuisine" (keyup.enter)="query()"/>
 </form>
 
 <div class="dishes">
