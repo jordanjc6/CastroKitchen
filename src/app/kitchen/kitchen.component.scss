@@ -1,0 +1,39 @@
+.admin_panel {
+    background-color: white;
+    margin: 25px;
+    padding: 5px;
+    border: 3px black solid;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+.edit_panel {
+    background-color: white;
+    margin: 25px;
+    padding: 5px;
+    border: 3px black solid;
+    border-radius: 10px;
+    width: 90%;
+
+    .dishes_table {
+        border-spacing: 5px;
+
+        .headings {
+            font-weight: bold;
+        }
+    
+        td {
+            border: 2px black solid;
+        }
+
+        .update {
+            background-color: yellow;
+        }
+
+        .delete {
+            background-color: red;
+        }
+    }
+}

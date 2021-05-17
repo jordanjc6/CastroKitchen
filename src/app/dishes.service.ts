@@ -17,4 +17,18 @@ export class DishesService {
   query(cuisine: string): Observable<any> {
     return this.http.get(`http://localhost:3000/dishes/query/${cuisine}`);
   }
+
+  postDish(dish: Dish) {
+    return this.http.post('http://localhost:3000/dishes', dish).subscribe(data =>{
+    });
+  }
+
+  updateDish(dish: Dish) {
+    return this.http.post(`http://localhost:3000/dishes/update/${dish.id}`, dish);
+  } 
+
+  deleteDish(dish: Dish) {
+    return this.http.post(`http://localhost:3000/dishes/delete/${dish.id}`, null);
+  }
+
 }

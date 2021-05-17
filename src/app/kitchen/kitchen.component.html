@@ -1,1 +1,35 @@
-<p>kitchen works!</p>
+<div class="admin_panel">
+    <h1>Add a Dish</h1>
+    <input type="text" [(ngModel)]="dish_name" placeholder="Name of dish...">
+    <input type="text" [(ngModel)]="dish_cuisine" placeholder="Dish cuisine...">
+    <input type="number" [(ngModel)]="dish_price" placeholder="Price...">
+
+    <span>Description: </span>   
+    <input type="text" [(ngModel)]="dish_description">  
+    <input type="text" [(ngModel)]="dish_image" placeholder="Image URL...">
+
+    <button (click)="sendDish()">Create Dish</button>
+</div>
+
+<div class="edit_panel">
+    <table class="dishes_table">
+        <tr class="headings">
+            <td>Name</td>
+            <td>Cuisine</td>
+            <td>Price ($)</td>
+            <td>Description</td>
+            <td>Image URL</td>
+            <td>Update</td>
+            <td>Delete</td>
+        </tr>
+        <tr *ngFor="let dish of dishes; let i=index">
+            <td><input [(ngModel)]='dish.name'></td>
+            <td><input [(ngModel)]='dish.cuisine'></td>
+            <td><input [(ngModel)]='dish.price'></td>
+            <td><input [(ngModel)]='dish.description'></td>
+            <td><input [(ngModel)]='dish.image'></td>
+            <td><button class="update" (click)="update(dish)">Go</button></td>
+            <td><button class="delete" (click)="delete(dish)">Go</button></td>
+        </tr>
+    </table>
+</div>
