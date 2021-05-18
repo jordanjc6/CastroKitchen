@@ -33,6 +33,7 @@ export class KitchenComponent implements OnInit {
     }
 
     this.dishesService.postDish(dish);
+    this.refresh();
   }
 
   update(dish: Dish) {
