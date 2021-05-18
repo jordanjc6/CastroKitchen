@@ -24,11 +24,11 @@ export class DishesService {
   }
 
   updateDish(dish: Dish) {
-    return this.http.post(`http://localhost:3000/dishes/update/${dish.id}`, dish);
+    return this.http.patch(`http://localhost:3000/dishes/update/${dish.id}`, dish);
   } 
 
   deleteDish(dish: Dish) {
-    return this.http.post(`http://localhost:3000/dishes/delete/${dish.id}`, null);
+    return this.http.delete(`http://localhost:3000/dishes/delete/${dish.id}`);
   }
 
 }
